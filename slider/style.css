@@ -1,0 +1,305 @@
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Section - Full Screen */
+.main {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url(pic/back.png) no-repeat center center/cover;
+    position: relative;
+    font-family: sans-serif;
+    overflow: hidden; /* Prevents content overflow */
+    
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 5%;
+    right: 120px;
+    z-index: 2; /* Ensure navbar stays on top of other elements */
+}
+
+.navbar .logo {
+    width: 160px;
+    cursor: pointer;
+    background: transparent;
+}
+
+/* Navigation Links */
+ul {
+    margin-top: 0; /* Adjusted to avoid overlap */
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(240, 248, 248);
+    transition: .4s ease;
+}
+
+ul li a:hover {
+    color: rgb(230, 104, 59);
+}
+
+/* Info Section */
+.info {
+    margin-left: 7%;
+    margin-top: 12%;
+    position: relative; /* Ensure it stays in place */
+    z-index: 2; /* Ensure .info is above the background image */
+}
+
+.info h1 {
+    font-size: 65px;
+    color: white;
+}
+
+.info h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.info span {
+    color: rgb(230, 104, 59);
+}
+
+.info a {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid palevioletred;
+    background-color: transparent;
+  
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.info a:hover {
+    background: pink;
+}
+
+/* Image Section */
+.image {
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    z-index: 1; /* Ensure it stays behind other elements */
+    margin-right: 20px;
+}
+
+.image img {
+    height: 100%;
+    width: auto; /* Maintain aspect ratio */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+/* Icons Section */
+.icons {
+    position: absolute;
+    bottom: 20px; /* Adjust the position as needed */
+    left: 20px; /* Adjust the position as needed */
+    z-index: 2; /* Ensure icons stay above other elements */
+}
+
+.icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px; /* Space between icons */
+}
+
+.icons ion-icon {
+    font-size: 24px; /* Adjust the size of the icons */
+    transition: color 0.3s ease;
+}
+
+.icons ion-icon:hover {
+    color: rgb(230, 104, 59); /* Change color on hover if needed */
+}
+
+/* About Section - Full-Screen */
+#about {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    background-color: rgba(23, 7, 114, 0.877);
+    position: relative;
+    margin-top: 0; /* Ensure it starts right after the .main section */
+}
+
+/* About Content Styling */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ensure it uses full width */
+    height: auto; /* Auto height to contain content */
+    padding: 20px; /* Add padding if needed */
+}
+
+.about img {
+    width: 400px;
+    height: 400px;
+    border-radius: 1%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-right: 100px; /* Reduced margin-right */
+}
+
+.Name h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+    position: relative; /* Ensure the line effect is positioned correctly */
+    margin: 0; /* Remove default margin */
+   
+}
+
+.Name p {
+    font-size: 1.2rem;
+    color: white;
+    max-width: 1000px;
+    line-height: 1;
+    text-align: left;
+    margin: 0;
+    
+}
+
+/* Buttons Container */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    border: 2px solid palevioletred;
+}
+
+.btn:hover {
+    background-color: pink;
+}
+
+/* Services*/
+#services {
+    display: flex;
+    flex-direction: column;   
+    padding: 20px;
+    align-items: center; /* Center content horizontally */
+    background-color:rgba(23, 7, 114, 0.877);
+    height: 100vh; /* Make the section take up the full viewport height */
+    width: auto;
+    box-sizing: border-box;
+}
+
+#services h1 {
+    text-align: center; /* Center text inside <h1> */
+    width: 100%; /* Ensure <h1> takes up the full width for centering */
+    margin-top: 110px;
+    margin-bottom: 20px; /* Add spacing below the <h1> */
+    color: white;
+}
+#services h2 {
+    text-align: center; /* Center text inside <h1> */
+    width: 100%; /* Ensure <h1> takes up the full width for centering*/
+    margin-top: 10px;
+    margin-bottom: 10px; /* Add spacing below the <h1> */
+    color: white;
+}
+
+#services h2 {
+    text-align: center; /* Center text inside <h1> */
+    width: 100%; /* Ensure <h1> takes up the full width for centering*/
+    margin-top: 10px;
+    margin-bottom: 10px; /* Add spacing below the <h1> */
+    color: white;
+}
+ 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center columns horizontally */
+    gap: 20px; /* Add spacing between columns */
+    max-width: 1200px; /* Adjust width as needed to fit your layout */
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    border: 2px solid black;
+    margin: 20px 0; /* Adjust vertical spacing as needed */
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 15px;
+    background   : rgba(30, 15, 114, 0.877); /* Default background color */
+    transition: box-shadow 0.8s;
+}
+
+.box h2 {
+    color: white; /* Ensure h2 text is white */
+    margin: 10px 0; /* Adjust spacing as needed */
+}
+
+.box p {
+    color: white; /* Ensure paragraph text is white */
+}
+
+.box:hover {
+    border: none;
+}    
+.box:hover {
+    border: none;
+    box-shadow: 0 8px 10px rgba(255, 255, 255, 0.6); /* Enhanced white shadow on hover */
+}
+
+.box img {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    padding: 10px;
+}
+
